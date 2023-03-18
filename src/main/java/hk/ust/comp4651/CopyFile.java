@@ -46,12 +46,12 @@ public class CopyFile {
 
         // TODO: Your implementation goes here...
         in = inFS.open(new Path(src));
-        out = outFS.creat(new Path(dst),
+        out = outFS.create(new Path(dst),
                 new Progressable(){
                     /*
-                    * Print a dot whenever 64 KB of data has been written to 
-                    * the datanode pipeline
-                    */
+                     * Print a dot whenever 64 KB of data has been written to 
+                     * the datanode pipeline
+                     */
                     public void progress(){
                         System.out.print(s:".");
                     }
